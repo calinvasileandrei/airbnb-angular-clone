@@ -1,0 +1,15 @@
+.image-card{
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+}
+
+.subtext{
+    font-size: small;
+    font-weight: lighter;
+}
+
+.title{
+    font-size: large;
+    font-weight: bold;
+}

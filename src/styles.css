@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Airbnb Cereal App Medium";
+}
+
+.f-small {
+  font-size: small;
+}
+
+.f-medium {
+  font-size: medium;
+}
+
+.f-large {
+  font-size: larger;
+}
+
+.f-xlarge {
+  font-size: x-large;
+}
+.icon-grey {
+  color: #a3a3a3;
+}
+
+.icon-center {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .center-heading {
+    margin-top: 30vh;
+  }
+
+  .sub-text {
+    color: #a3a3a3;
+    font-size: x-small;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .sub-text {
+    color: #a3a3a3;
+    font-size: small;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sub-text {
+    color: #a3a3a3;
+    font-size: small;
+    overflow: hidden;
+  }
+}

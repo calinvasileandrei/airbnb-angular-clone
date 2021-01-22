@@ -1,0 +1,13 @@
+
+#custom-header {
+  color: #ffffff;
+  font-size: medium;
+}
+
+
+.rectangle-rounded {
+  background-color: white;
+  border-radius: 50px;
+  color: #000000;
+  max-width: 120px;
+}

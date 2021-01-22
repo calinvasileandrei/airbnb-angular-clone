@@ -1,0 +1,10 @@
+.emergency-text {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  font-size: small;
+  text-decoration: underline;
+}
+

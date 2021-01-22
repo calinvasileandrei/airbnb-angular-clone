@@ -1,0 +1,20 @@
+
+
+.bg-image {
+  background-image: url("/assets/bg-airbnb.jpeg");
+  overflow: hidden;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+
+.button-rounded {
+  border-radius: 12px;
+}
+
+
+
+

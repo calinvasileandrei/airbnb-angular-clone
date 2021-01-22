@@ -1,0 +1,30 @@
+.search-rounded {
+  background-color: white;
+  border-radius: 50px;
+  color: #000000;
+  min-width: 600px;
+}
+
+.circular-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 45px;
+  width: 45px;
+  background-color: #ff375c;
+  border-radius: 50%;
+  padding: auto;
+}
+
+
+.input-search {
+  width: 100%;
+  border: none;
+  font-weight: normal;
+}
+
+.rectangle-rounded {
+  background-color: white;
+  border-radius: 50px;
+  color: #000000;
+}
