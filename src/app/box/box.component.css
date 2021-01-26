@@ -1,0 +1,15 @@
+.title{
+    font-size: large;
+    font-weight: normal;
+    white-space:nowrap;
+
+}
+
+.image-card-rounded{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.image-card{
+    width: 100%;
+}

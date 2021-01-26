@@ -8,7 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { AlertTextComponent } from './alert-text/alert-text.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { InlinecardComponent } from './inlinecard/inlinecard.component';
-import { ListdestinationsComponent } from './listdestinations/listdestinations.component';
+import { BoxComponent } from './box/box.component';
+import { ExperiencesComponent } from './experiences/experiences.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListdestinationsComponent } from './listdestinations/listdestinations.c
     AlertTextComponent,
     SearchbarComponent,
     InlinecardComponent,
-    ListdestinationsComponent,
+    BoxComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,

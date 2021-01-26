@@ -1,0 +1,18 @@
+ <div>
+    <div class="row">
+      <div class="col-12">
+        <img src={{boxChild.img}} *ngIf="notrounded" class="image-card" alt="" />
+        <img src={{boxChild.img}} *ngIf="!notrounded" class="image-card-rounded" alt="" />
+      </div>
+      <div class="col-8 align-self-top">
+        <div class="row text-left">
+          <div class="col-12">
+            <span class="title"> {{boxChild?.title}} </span>
+          </div>
+          <div class="col-12">
+              <span> {{boxChild?.subtitle}} </span>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>

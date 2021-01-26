@@ -4,12 +4,12 @@
     border-radius: 12px;
 }
 
-.subtext{
+.distance{
     font-size: small;
     font-weight: lighter;
 }
 
-.title{
+.city{
     font-size: large;
     font-weight: bold;
 }

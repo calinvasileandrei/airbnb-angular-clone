@@ -1,7 +1,14 @@
 
 #custom-header {
-  color: #ffffff;
   font-size: medium;
+}
+
+.dark{
+  color:black;
+}
+
+.light{
+  color: white;
 }
 
 
