@@ -9,7 +9,10 @@ import { AlertTextComponent } from './alert-text/alert-text.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { InlinecardComponent } from './inlinecard/inlinecard.component';
 import { BoxComponent } from './box/box.component';
-import { ExperiencesComponent } from './experiences/experiences.component'
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { InfocardComponent } from './infocard/infocard.component';
+import { HomeComponent } from './home/home.component';
+import { CityComponent } from './city/city.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ExperiencesComponent } from './experiences/experiences.component'
     SearchbarComponent,
     InlinecardComponent,
     BoxComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    InfocardComponent,
+    HomeComponent,
+    CityComponent
   ],
   imports: [
     BrowserModule,

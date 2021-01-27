@@ -3,36 +3,23 @@
   <app-header [theme]="'dark'"> </app-header>
   <div class="border-bottom" ></div>
   <div class="row">
-    <div class="col-10 offset-1">
+
+    <div class="col-10 offset-1 border-bottom">
+      <!--Top row-->
       <div class="row justify-content-between mt-5 mb-5">
         <div class="col-6">
           <u>Tutte le Esperienze online</u>
         </div>
         <div class="col-4">
           <div class="row justify-content-end">
-            <div class="col-6">
-              <div class="row justify-content-end">
-                <div class="col-auto">
-                  <i class="bi bi-box-arrow-in-up"></i>
-                </div>
-                <div class="col-6 pl-0">
-                  <u>Condivide</u>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="row justify-content-end">
-                <div class="col-auto">
-                    <i class="bi bi-heart"></i>
-                </div>
-                <div class="col-6 pl-0">
-                    <u>Salva</u>
-                </div>
-              </div>
-            </div>
+            <span class="bi bi-box-arrow-in-up align-top mb-2 mr-2"></span>
+            <u>Condivide</u>
+            <span class="bi bi-heart align-top mb-2 ml-2 mr-2"></span>
+            <u>Salva</u>
           </div>
         </div>
       </div>
+      <!--First 4 cars-->
       <div class="row mt-3">
         <div  class="col-12 col-sm-6 col-md-3 p-1">
           <app-box [boxChild]="introBoxes[0]" notrounded={true} ></app-box>
@@ -50,19 +37,122 @@
       <div class="row mt-5 mb-5">
       <div class="col-8">
         <div class="row">
-          <div class="col-6 justify-items-center">
+          <div class="col-12 justify-items-center">
             <i class="bi bi-display mr-2 "></i> <span class="">Esperienze Online</span>
+          </div>
+          <div class="col-12 mt-2">
+            <h3>Pasta con le nonne</h3>
+          </div>
+          <div class="col-12 align-items-center h-100 pb-5 border-bottom">
+              <span class="f-small"><span class="material-icons align-bottom">star_rate</span> 4.97 (1071) · <u>Palombara Sabina, Italia</u> · Parte delle <u>Esperienze online di Airbnb</u></span>
+          </div>
+          <div class="col-12">
+            <h3>Cosa farete</h3>
+          </div>
+          <div class="col-12 mt-3 mb-4">
+            <input type="button" class="btn btn-light w-100 text-left f-small border" value="Traduci in Italiano">
+          </div>
+          <div class="col-12 pb-5 border-bottom">
+            <p class="f-light f-small">
+              Italy means Pasta and ... Grandmas! <br>
+              <br>
+              Travel with us across the Grandma's kitchen around Italy to learn the authentic traditional recipes. <br>
+              <br>
+              There will be 5 crazy grandmas, their granddaughters and their entire families ready to welcome you in their own home... like you’re there, minus the jet lag!<br>
+              <br>
+              Check our schedule: <br>
+              Monday- Trofie with Pistachio pesto (vegan) <br>
+              Tuesday - Fettuccine with Ragu <br>
+              Wednesday… <u><b>continua a leggere</b></u><br>
+            </p>
+          </div>
+          <div class="col-12 pt-5 pb-5">
+            <h3>Come partecipare</h3>
+          </div>
+          <div class="col-12 border-bottom pb-5">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 m-1 border rounded" >
+                <app-infocard [cardData]="card1"></app-infocard>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 m-1 border rounded" >
+                <app-infocard [cardData]="card2"></app-infocard>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <h3>Cosa portare</h3>
+            <div class="row">
+              <div *ngFor="let ingredient of ingredients" class="col-12 m-2">
+                <span class="material-icons align-bottom">check_circle_outline</span><span> {{ingredient}} </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="shop-card">
-
+      <div class="col-4 f-small">
+        <div class="row border  container-rounded p-3">
+          <div class="col-12">
+            <span><b>A partire da 25€</b>  a persona</span>
+          </div>
+          <div class="col-12 ">
+            <u>Mostra tutti  i prezzi</u>
+          </div>
+          <div class="col-12 border container-rounded mt-4 mb-4 ">
+            <div class="row">
+              <div class="col-6 border-right">
+                <div class="row ">
+                  <div class="col-12">
+                    <span>DATE</span>
+                  </div>
+                  <div class="col-12">
+                    <span>Aggiungi le date</span> <span class="material-icons">keyboard_arrow_down</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row ">
+                  <div class="col-12">
+                    <span>DATE</span>
+                  </div>
+                  <div class="col-12">
+                    <span>Aggiungi le date</span> <span class="material-icons">keyboard_arrow_down</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mb-4 border-bottom">
+            <div class="col-8">
+              <div class="row">
+                <div class="col-12">
+                  <span>mer 27 gen</span>
+                </div>
+                <div class="col-12">
+                  18:00 - 19:30 (CET)
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <span><b>35€</b> a persona</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!--Comments Sections-->
+    <div class="col-10 offset-1">
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+
     </div>
   </div>
+</div>
 
   <br /><br /><br /><br />
 </div>
