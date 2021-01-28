@@ -24,6 +24,20 @@
   color: white;
 }
 
+.square-card{
+  overflow: hidden;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.break-line{
+  white-space: pre-line;
+}
+
+.airbnb-color{
+  background-color: #ff375c;
+}
+
 .f-medium{
   font-family: "Airbnb Cereal App Medium";
   font-weight: normal;

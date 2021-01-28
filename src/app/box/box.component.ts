@@ -8,7 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BoxComponent implements OnInit {
   @Input() boxChild;
   @Input() notrounded;
+  @Input() square;
   constructor() { }
+
+  generateCustomClass = () => {
+    if (this.notrounded){
+      return 'image-card square-card';
+    }else{
+      return 'image-card-rounded square-card';
+    }
+  }
 
   ngOnInit(): void {
   }

@@ -1,11 +1,8 @@
  <div>
     <div class="row">
       <div class="col-12">
-        <img src={{boxChild.img}} *ngIf="notrounded && boxChild.link" [routerLink]="boxChild.link" class="image-card" alt="" />
-        <img src={{boxChild.img}} *ngIf="!notrounded && boxChild.link" [routerLink]="boxChild.link" class="image-card-rounded" alt="" />
-
-        <img src={{boxChild.img}} *ngIf="notrounded && !boxChild.link" class="image-card" alt="" />
-        <img src={{boxChild.img}} *ngIf="!notrounded && !boxChild.link" class="image-card-rounded" alt="" />
+        <img src={{boxChild.img}} *ngIf="boxChild.link" [routerLink]="[boxChild.link,boxChild.experience]" [class]="generateCustomClass()" alt="" />
+        <img src={{boxChild.img}} *ngIf="!boxChild.link" [class]="generateCustomClass()" alt="" />
       </div>
       <div class="col-8 align-self-top">
         <div class="row text-left">

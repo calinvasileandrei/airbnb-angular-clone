@@ -12,7 +12,9 @@ import { BoxComponent } from './box/box.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { InfocardComponent } from './infocard/infocard.component';
 import { HomeComponent } from './home/home.component';
-import { CityComponent } from './city/city.component'
+import { CityComponent } from './city/city.component';
+import { UtilsService} from './utils.service';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CityComponent } from './city/city.component'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UtilsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@ import {CityComponent} from './city/city.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'experiences', component: ExperiencesComponent},
+  {path: 'experiences/:titleId', component: ExperiencesComponent},
   {path: 'city/:id', component: CityComponent},
 ];
 
